@@ -5,9 +5,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  flex-direction: column;
   min-height: 100vh;
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
 }
 
 header {
@@ -140,13 +142,41 @@ header {
 }
 
 .content button {
+  position: relative;
   color: #FFFFFF;
-  background: none;
+  background: transparent;
   border: 0.25em solid #FFFFFF;
   padding: 1.25em 1.25em;
   font-size: 4vw;
   width: 60vw;
-  z-index:1;
+  transition: 0.3s;
+}
+
+.content button:hover {
+  color: #111111;
+  border-
+}
+
+.content button::before{
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 0;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  /*background: #ff4655;*/
+  background: #ffffff;
+  transition: 350ms ease-in;
+  z-index: -1;
+}
+
+.content button:hover:before {
+  width: 101%;
+}
+
+footer {
+  margin-top:auto;
 }
 
 .social-icons {
