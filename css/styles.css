@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  top: 0;
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  left: 0;
+  margin: 1rem;
+  position: absolute;
+  padding: 0;
+}
+
+.navbar {
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  right: 0;
+  background: hsl(0 0% 100% / 0.1); /* HSL stands for hue, saturation, and lightness. Po slashu jest opacity */
+  backdrop-filter: blur(1rem);
+  height: 100vh;
+  width: 65vw;
+  padding-top: 8em;
+
+  transform: translateX(0%);
+  transition: transform 400ms ease-out;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 6vw;
+}
+
+.navbar a:hover {
+  color: #C9CCD5;
+}
+
+.navbar-icon {
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-icon span {
+  right: 2rem;
+  top: 2rem;
+  height: 4px;
+  width: 2rem;
+  position: absolute;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-icon span:nth-child(1) {
+  top: 35px;
+}
+
+.navbar-icon span:nth-child(2) {
+  top: 48px;
+}
+
+.navbar-icon span:nth-child(3) {
+  top: 61px;
+}
+
+.navbar-icon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 45px;
+  right: 2rem;
+}
+
+.navbar-icon.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+.navbar-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 45px;
+  right: 2rem;
+}
+
+.invisible {
+  transform: translateX(100%);
+}
+
+.content {
+  margin: 1rem;
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  width: 80vw;
+  gap: 1rem;
+}
+
+.content h1 {
+  font-size: 14vw;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.content p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.content button {
+  color: #FFFFFF;
+  background: none;
+  border: 0.25em solid #FFFFFF;
+  padding: 1.25em 1.25em;
+  font-size: 4vw;
+  width: 60vw;
+  z-index:1;
+}
+
+.social-icons {
+  margin: 1rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-start;
+}
+
+.social-icons img {
+  width: 8vw;
+  height: 8vw;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  header img {
+    width: 15vw;
+    height: 20vw;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+
+
+}
