@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("background.png");
+  background-image: url("bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
   min-height: 100vh;
   color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
 }
 
@@ -133,12 +133,12 @@ header {
   font-size: 14vw;
   font-weight: bold;
   margin-bottom: 0;
+  letter-spacing: 3px;
 }
 
 .content p {
   line-height: 1.5;
   font-size: 0.9rem;
-  letter-spacing: 1px;
 }
 
 .content button {
@@ -194,6 +194,12 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+
+  body {
+  background-position: 25% center;
+  background-image: url("tabletbg.png");
+  }
+
   header img {
     width: 15vw;
     height: 20vw;
