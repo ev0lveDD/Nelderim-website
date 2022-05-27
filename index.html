@@ -27,7 +27,7 @@
         <li><a href="#">BLOG</a></li>
         <li><a href="#">WIKI</a></li>
         <li><a href="#">DISCORD</a></li>
-        <li><a href="#">REJESTRACJA</a></li>
+        <li><a href="#" onclick="toggleForm()">REJESTRACJA</a></li>
         <li><a href="#">DONATE</a></li>
       </ul>
     </div>
@@ -37,6 +37,29 @@
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
     <button type="button" name="button">Learn more</button>
+
+    <div class="register">
+      <a href="#" class="fa-solid fa-arrow-left" onclick="toggleForm()"></a>
+      <form class="register-form" action="index.html" method="post">
+        <img class="logo-form" src="images/logo.png" alt="nelderim-logo-reg">
+        <h1>REGISTER</h1>
+
+        <label for="email">Email</label>
+        <div class="input-container">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder= "Enter Email" name="enter" value="">
+        </div>
+
+        <label for="email">Password</label>
+        <div class="input-container">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" placeholder="Enter Password" name="password" value="">
+        </div>
+
+        <button type="button" name="button-register">Register</button>
+      </form>
+    </div>
+
   </div>
 
 <footer>
