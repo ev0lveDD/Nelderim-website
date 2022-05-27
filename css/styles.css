@@ -249,7 +249,7 @@ h1 {
   font-size: 10vw;
   text-align: center;
   padding-top: 0.5rem;
-  margin-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .input-container {
@@ -268,7 +268,7 @@ h1 {
 .register-form i {
   padding: 10px 10px 10px 0;
   position: absolute;
-  color: #476072;
+  color: white;
   font-size: 4vw;
   text-align: center;
   background-color: #112B3C;
@@ -287,6 +287,10 @@ h1 {
   margin-bottom: 1rem;
   outline: none;
   text-align: center;
+}
+
+.register-form input:hover {
+  border-color: #9BA4B4;
 }
 
 .register-form input:focus {
@@ -442,5 +446,66 @@ footer {
   .navbar a {
     font-size: 1vw;
   }
+
+  .register {
+    margin: 0;
+    top: 7vh;
+    right: 35vw;
+    width: 30vw;
+    height: 86vh;
+    transform: translateY(110%);
+  }
+
+  .invisible-form {
+    transform: translateY(0%);
+  }
+
+  .register a{
+    right: 0;
+    margin: 2vw;
+    font-size: 1.3vw;
+  }
+
+  .register-form {
+    margin-top: auto;
+    margin-left: 5vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .register-form img {
+    width: 4vw;
+    height: 6vw;
+  }
+
+  .register-form h1 {
+    font-size: 2.5vw;
+  }
+
+  .register-form label {
+    font-size: 0.7vw;
+  }
+
+  .register-form i {
+    padding: 10px 10px 10px 0;
+    color: white;
+    font-size: 1vw;
+  }
+
+  .register-form input {
+    padding: 10px;
+    font-size: 1vw;
+    margin-bottom: 1rem;
+  }
+
+  .register-form button {
+    width: 100%;
+    font-size: 0.7vw;
+    padding: 1.25em 1.25em;
+  }
+
+
 
 }
