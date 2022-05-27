@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("background.jpg");
+  background-image: url("../images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,11 +40,15 @@ h1 {
   font-family: 'Vollkorn', serif;
 }
 
-.logo {
+.logo, .logo-horizontal {
   left: 0;
   margin: 1rem 7vw;
   position: absolute;
   padding: 0;
+}
+
+.logo-horizontal {
+  display: none;
 }
 
 .navbar {
@@ -228,15 +232,15 @@ footer {
 }
 
 .social-icons a:nth-of-type(1){
-  animation: 0.3s ease-in-out 0s 1 slideInBottomIco;
+  animation: 0.5s ease-out 0s 1 slideInBottomIco;
 }
 
 .social-icons a:nth-of-type(2){
-  animation: 0.3s ease-in-out 0.1s 1 slideInBottomIco;
+  animation: 0.5s ease-out 0.1s 1 slideInBottomIco;
 }
 
 .social-icons a:nth-of-type(3){
-  animation: 0.3s ease-in-out 0.2s 1 slideInBottomIco;
+  animation: 0.5s ease-out 0.2s 1 slideInBottomIco;
 }
 
 .social-icons a:hover {
@@ -265,9 +269,17 @@ footer {
 
   }
 
+  .logo {
+    display: none;
+  }
+
+  .logo-horizontal {
+    display: block;
+  }
+
   header img {
-    width: 4vw;
-    height: 5vw;
+    width: 12vw;
+    height: 4vw;
   }
 
   .content {
