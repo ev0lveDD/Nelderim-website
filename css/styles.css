@@ -199,6 +199,7 @@ h1 {
 }
 
 .register {
+  display: none;
   margin: 0;
   top: 0;
   right: 0;
@@ -209,8 +210,6 @@ h1 {
   justify-content: center;
   align-items: center;
   z-index: 10000;
-  transform: translatey(110%);
-  transition: transform 700ms ease-out;
 }
 
 .register a {
@@ -226,7 +225,7 @@ h1 {
 }
 
 .invisible-form {
-  transform: translateY(0%);
+  display: block;
 }
 
 .register-form {
@@ -303,7 +302,7 @@ h1 {
 }
 
 .register-form button {
-  padding-top: 2em;
+  padding: 1.25em 1.25em;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -453,11 +452,6 @@ footer {
     right: 35vw;
     width: 30vw;
     height: 86vh;
-    transform: translateY(110%);
-  }
-
-  .invisible-form {
-    transform: translateY(0%);
   }
 
   .register a{
@@ -503,7 +497,6 @@ footer {
   .register-form button {
     width: 100%;
     font-size: 0.7vw;
-    padding: 1.25em 1.25em;
   }
 
 
