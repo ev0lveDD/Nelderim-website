@@ -385,17 +385,46 @@ footer {
 
 }
 
+@media only screen and (min-width: 321px) {
+
+  body {
+  background-position: 50% center;
+
+  }
+
+  header img {
+    width: 2.7em;
+    height: 4em;
+  }
+
+  .content {
+    width: 65vw;
+  }
+
+  .content h1 {
+    font-size: 2.4em;
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+
+  .content button {
+    font-size: 0.7em;
+    width: 50vw;
+  }
+
+  .register-form label {
+    font-size: 0.7em;
+  }
+
+
+}
+
 
 
 @media only screen and (min-width: 600px) {
 
   body {
 
-  }
-
-  header img {
-    width: 6vw;
-    height: 9vw;
   }
 
   .logo {
@@ -411,10 +440,12 @@ footer {
   }
 
   .content h1 {
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: 500;
-    margin-bottom: 0;
-    margin-top: auto;
+  }
+
+  .content button {
+    width: 30vw;
   }
 
   .social-icons {
@@ -426,11 +457,6 @@ footer {
 
   .social-icons a {
     font-size: 1.2em;
-  }
-
-  .content button {
-    font-size: 0.7em;
-    width: 30vw;
   }
 
   .register-form {
