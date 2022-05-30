@@ -10,7 +10,6 @@ body {
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   display: flex;
-  overflow-y: hidden;
 }
 
 @keyframes slideInTop {
@@ -477,6 +476,10 @@ footer {
 }
 
 @media only screen and (min-width:961px) {
+
+  body {
+    overflow-y: hidden;
+  }
 
   header img {
     width: 12vw;
