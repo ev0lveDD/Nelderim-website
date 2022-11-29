@@ -6,7 +6,7 @@
 * [Preview](#Preview)
 
 ## General info
-This project involved creating a logo as well as a website design from scratch. 
+This project involved creating a logo as well as a simple website design from scratch. 
 Once approved, the site was written in HTML, CSS and using JavaScript. 
 However, after further discussions, we came to the conclusion that I would rewrite the site using React and extend the functionality.
 	
